@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "jenkins-mcp": {
+      "command": "jenkins_mcp_enterprise",
+      "args": [
+        "--transport",
+        "stdio",
+        "--config",
+        "/Users/JordanJarvis/Documents/ai/jenkins-mcp/config/mcp-config.yml"
+      ],
+      "timeout": 300
+    }
+  }
+}
