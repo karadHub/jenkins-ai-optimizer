@@ -1,0 +1,78 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jenkins-ai-optimizer"
+version = "1.0.1"
+description = "MCP server for Jenkins integration with AI assistants, providing build management, log analysis, and failure diagnostics."
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Vaibhav Karad", email = "your.email@domain.com"}
+]
+maintainers = [
+    {name = "Vaibhav Karad", email = "your.email@domain.com"}
+]
+keywords = ["jenkins", "mcp", "ai", "devops", "model-context-protocol"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "python-jenkins>=1.8.2",
+    "requests>=2.31.0",
+    "sentence-transformers>=2.2.0",
+    "qdrant-client>=1.14.3",
+    "tiktoken>=0.5.0",
+    "APScheduler>=3.11.0",
+    "modelcontextprotocol>=0.1.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+    "httpx>=0.24.0",
+    "websockets>=11.0",
+    "sse-starlette>=1.6.0",
+    "pyyaml>=6.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/karadHub/jenkins-ai-optimizer"
+Repository = "https://github.com/karadHub/jenkins-ai-optimizer"
+Documentation = "https://github.com/karadHub/jenkins-ai-optimizer/blob/main/README.md"
+Issues = "https://github.com/JkaradHub/jenkins-ai-optimizer/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.1.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["jenkins_mcp_enterprise*"]
+
+[tool.setuptools.package-data]
+jenkins_mcp_enterprise = ["diagnostic_config/diagnostic-parameters.yml"]
+
+[project.scripts]
+jenkins_mcp_enterprise = "jenkins_mcp_enterprise.server:main"
+
+[tool.isort]
+profile = "black"
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
