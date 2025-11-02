@@ -614,7 +614,7 @@ cleanup:
 
 ## Contributing
 
-We welcome contributions! Please see [`PROJECT.md`](PROJECT.md) for development workflow and coding standards.
+We welcome contributions! Please see our [Code of Conduct](CODE_OF_CONDUCT.md) and [`PROJECT.md`](PROJECT.md) for development workflow and coding standards.
 
 ### Development Setup
 
@@ -759,7 +759,8 @@ This project is licensed under the **GNU General Public License v3.0** - see the
 
 - **Issues**: [GitHub Issues](https://github.com/karadHub/jenkins-ai-optimizer/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/karadHub/jenkins-ai-optimizer/discussions)
-- **Documentation**: See [`docs/`](.) for detailed guides
+- **Code of Conduct**: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+- **Documentation**: See [Documentation](#documentation) section above for detailed guides
 
 ---
 
