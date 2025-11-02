@@ -1,12 +1,12 @@
 # Claude Desktop Commands Guide
 
-## 🎯 Quick Reference for Jenkins AI Optimizer
+## Quick Reference for Jenkins AI Optimizer
 
 This guide shows you **exactly what to ask Claude Desktop** to interact with your Jenkins server.
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before asking questions, tell Claude your Jenkins URL:
 
@@ -22,7 +22,7 @@ Or include it in each question:
 
 ---
 
-## 🚀 Available Commands
+## Available Commands
 
 ### 1. Diagnose Build Failures
 
