@@ -7,13 +7,13 @@ name = "jenkins-ai-optimizer"
 version = "1.0.1"
 description = "MCP server for Jenkins integration with AI assistants, providing build management, log analysis, and failure diagnostics."
 readme = "README.md"
-license = {file = "LICENSE"}
+license = "GPL-3.0-or-later"
 requires-python = ">=3.10"
 authors = [
-    {name = "Vaibhav Karad", email = "your.email@domain.com"}
+    {name = "Vaibhav Karad", email = "karadhub@gmail.com"}
 ]
 maintainers = [
-    {name = "Vaibhav Karad", email = "your.email@domain.com"}
+    {name = "Vaibhav Karad", email = "karadhub@gmail.com"}
 ]
 keywords = ["jenkins", "mcp", "ai", "devops", "model-context-protocol"]
 classifiers = [
@@ -46,7 +46,7 @@ dependencies = [
 Homepage = "https://github.com/karadHub/jenkins-ai-optimizer"
 Repository = "https://github.com/karadHub/jenkins-ai-optimizer"
 Documentation = "https://github.com/karadHub/jenkins-ai-optimizer/blob/main/README.md"
-Issues = "https://github.com/JkaradHub/jenkins-ai-optimizer/issues"
+Issues = "https://github.com/karadHub/jenkins-ai-optimizer/issues"
 
 [project.optional-dependencies]
 dev = [
