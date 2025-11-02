@@ -1,7 +1,7 @@
 jenkins:
   url: "http://jenkins.server:8080/"
   username: "jenkins"
-  token: "114e4b86e9b47e870c53d6103a5d63b3db"
+  token: "your-api-token-here"
   timeout: 30
   verify_ssl: true
 
