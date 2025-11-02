@@ -8,6 +8,21 @@ from typing import Any, Dict, Optional
 
 import yaml
 
+# Load environment variables from .env file
+try:
+    from dotenv import load_dotenv
+    # Try to load .env file from project root
+    project_root = Path(__file__).parent.parent
+    env_file = project_root / ".env"
+    if env_file.exists():
+        load_dotenv(dotenv_path=env_file)
+    else:
+        # Try loading from current directory as fallback
+        load_dotenv()
+except ImportError:
+    # python-dotenv not installed, skip .env loading
+    pass
+
 from .exceptions import ConfigurationError
 from .logging_config import get_component_logger
 
