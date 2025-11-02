@@ -1,17 +1,28 @@
 # Jenkins AI Optimizer
 
+[![PyPI version](https://badge.fury.io/py/jenkins-ai-optimizer.svg)](https://badge.fury.io/py/jenkins-ai-optimizer)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-green.svg)](https://modelcontextprotocol.io)
+[![Downloads](https://static.pepy.tech/badge/jenkins-ai-optimizer)](https://pepy.tech/project/jenkins-ai-optimizer)
 
 > **Enterprise-grade Model Context Protocol (MCP) server for Jenkins CI/CD integration** — Empowering AI assistants with deep Jenkins insights, intelligent build diagnostics, and semantic log analysis.
 
 Transform how you interact with Jenkins through AI. This production-ready MCP server enables AI assistants like Claude to understand your Jenkins environment, diagnose build failures, analyze complex pipelines, and search massive logs—all through natural conversation.
 
+## 🚀 Quick Install
+
+```bash
+pip install jenkins-ai-optimizer
+```
+
+**See [Quick Start](#quick-start) for complete setup instructions.**
+
 ---
 
 ## Table of Contents
 
+- [Installation](#-quick-install)
 - [Overview](#overview)
 - [Key Features](#key-features)
 - [Architecture](#architecture)
@@ -750,8 +761,40 @@ This project is licensed under the **GNU General Public License v3.0** - see the
 
 - **FastMCP** - Modern MCP server framework
 - **Qdrant** - High-performance vector database
-- **Anthropic** - Model Context Protocol specification
+- **Anthropic** - Model Context Protocol specification and Claude AI
 - **Jenkins Community** - Robust CI/CD platform
+
+### Special Thanks
+
+This project was developed with assistance from **Claude AI** (Anthropic), demonstrating the power of AI-assisted development in creating production-ready tools.
+
+---
+
+## Contributing
+
+We welcome contributions! Here's how you can help:
+
+### Ways to Contribute
+
+- 🐛 **Report bugs** via [GitHub Issues](https://github.com/karadHub/jenkins-ai-optimizer/issues)
+- 💡 **Suggest features** or improvements
+- 📖 **Improve documentation** 
+- 🔧 **Submit pull requests** with bug fixes or features
+- ⭐ **Star the repository** to show your support
+- 📣 **Share** with others who might find it useful
+
+### Development Process
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/your-feature`
+3. Make your changes with tests
+4. Ensure all tests pass: `pytest`
+5. Lint your code: `ruff check .`
+6. Format code: `ruff format .`
+7. Commit with conventional commits: `feat(diagnostics): add new error pattern`
+8. Push and create a Pull Request
+
+See [PROJECT.md](PROJECT.md) for detailed development guidelines and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for community standards.
 
 ---
 
