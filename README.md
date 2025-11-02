@@ -4,7 +4,6 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-green.svg)](https://modelcontextprotocol.io)
-[![Downloads](https://static.pepy.tech/badge/jenkins-ai-optimizer)](https://pepy.tech/project/jenkins-ai-optimizer)
 
 > **Enterprise-grade Model Context Protocol (MCP) server for Jenkins CI/CD integration** — Empowering AI assistants with deep Jenkins insights, intelligent build diagnostics, and semantic log analysis.
 
@@ -778,7 +777,7 @@ We welcome contributions! Here's how you can help:
 
 - 🐛 **Report bugs** via [GitHub Issues](https://github.com/karadHub/jenkins-ai-optimizer/issues)
 - 💡 **Suggest features** or improvements
-- 📖 **Improve documentation** 
+- 📖 **Improve documentation**
 - 🔧 **Submit pull requests** with bug fixes or features
 - ⭐ **Star the repository** to show your support
 - 📣 **Share** with others who might find it useful
