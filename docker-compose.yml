@@ -36,6 +36,9 @@ services:
       - UVICORN_HOST=0.0.0.0
       - UVICORN_PORT=8000
       - DISABLE_VECTOR_SEARCH=false  # Enable vector search with Qdrant
+      - JENKINS_TOKEN=${JENKINS_TOKEN}  # Load from .env file
+    env_file:
+      - .env  # Automatically load all variables from .env file
     volumes:
       - jenkins_mcp_enterprise_cache:/tmp/mcp-jenkins
       - ./config:/app/config:ro
