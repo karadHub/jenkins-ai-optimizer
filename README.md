@@ -1,9 +1,23 @@
 # Jenkins AI Optimizer
 
+```
+┌────────────────────────────────────────────────────────────────────────────────────┐
+│                                                                                    │
+│                                                                                    │
+│  ░▀▀█░█▀▀░█▀█░█░█░▀█▀░█▀█░█▀▀░░░░░█▀█░▀█▀░░░░░█▀█░█▀█░▀█▀░▀█▀░█▄█░▀█▀░▀▀█░█▀▀░█▀▄  │
+│  ░░░█░█▀▀░█░█░█▀▄░░█░░█░█░▀▀█░▄▄▄░█▀█░░█░░▄▄▄░█░█░█▀▀░░█░░░█░░█░█░░█░░▄▀░░█▀▀░█▀▄  │
+│  ░▀▀░░▀▀▀░▀░▀░▀░▀░▀▀▀░▀░▀░▀▀▀░░░░░▀░▀░▀▀▀░░░░░▀▀▀░▀░░░░▀░░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀░▀  │
+│                                                                                    │
+│                                                                                    │
+└────────────────────────────────────────────────────────────────────────────────────┘
+
+```
+
 [![PyPI version](https://badge.fury.io/py/jenkins-ai-optimizer.svg)](https://badge.fury.io/py/jenkins-ai-optimizer)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Jenkins](https://img.shields.io/badge/Jenkins-2.400+-orange.svg)](https://www.jenkins.io/download/)
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-green.svg)](https://modelcontextprotocol.io)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 > **Enterprise-grade Model Context Protocol (MCP) server for Jenkins CI/CD integration** — Empowering AI assistants with deep Jenkins insights, intelligent build diagnostics, and semantic log analysis.
 
@@ -15,8 +29,9 @@ Transform how you interact with Jenkins through AI. This production-ready MCP se
 pip install jenkins-ai-optimizer
 ```
 
-**See [Quick Start](#quick-start) for complete setup instructions.**
+<img width="1584" height="296" alt="image" src="https://github.com/user-attachments/assets/4ec926c4-7f48-49c1-b269-f6b415ce2b2b" />
 
+**See [Quick Start](#quick-start) for complete setup instructions.**
 ---
 
 ## Table of Contents
@@ -120,21 +135,21 @@ AI analyzes automatically → Get actionable diagnosis
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                        AI Assistant (Claude)                     │
-│                     Natural Language Interface                   │
+│                        AI Assistant (Claude)                    │
+│                     Natural Language Interface                  │
 └───────────────────────────┬─────────────────────────────────────┘
                             │ MCP Protocol (SSE/stdio)
                             ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                    Jenkins MCP Enterprise Server                 │
+┌────────────────────────────────────────────────────────────────┐
+│                    Jenkins MCP Enterprise Server               │
 │  ┌──────────────┐  ┌──────────────┐  ┌─────────────────────┐   │
 │  │ Tool Factory │  │ DI Container │  │ Multi-Jenkins Mgr   │   │
 │  └──────────────┘  └──────────────┘  └─────────────────────┘   │
-│  ┌──────────────────────────────────────────────────────────┐   │
-│  │              Tool Registry (10+ Tools)                   │   │
+│  ┌──────────────────────────────────────────────────────────┐  │
+│  │              Tool Registry (10+ Tools)                   │  │
 │  │  • Diagnostics  • Logs       • Search   • Subbuilds     │   │
 │  │  • Trigger      • Parameters • Ripgrep  • Navigation    │   │
-│  └──────────────────────────────────────────────────────────┘   │
+│  └──────────────────────────────────────────────────────────┘  │
 │  ┌──────────────┐  ┌──────────────┐  ┌─────────────────────┐   │
 │  │ Cache Mgr    │  │ Vector Mgr   │  │ Cleanup Scheduler   │   │
 │  └──────────────┘  └──────────────┘  └─────────────────────┘   │
