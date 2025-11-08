@@ -137,9 +137,9 @@ AI analyzes automatically → Get actionable diagnosis
 ┌─────────────────────────────────────────────────────────────────┐
 │                        AI Assistant (Claude)                    │
 │                     Natural Language Interface                  │
-└───────────────────────────┬─────────────────────────────────────┘
-                            │ MCP Protocol (SSE/stdio)
-                            ▼
+└─────────────────────────────┬───────────────────────────────────┘
+                              │  MCP Protocol (SSE/stdio)
+                              ▼
 ┌────────────────────────────────────────────────────────────────┐
 │                    Jenkins MCP Enterprise Server               │
 │  ┌──────────────┐  ┌──────────────┐  ┌─────────────────────┐   │
@@ -147,22 +147,22 @@ AI analyzes automatically → Get actionable diagnosis
 │  └──────────────┘  └──────────────┘  └─────────────────────┘   │
 │  ┌──────────────────────────────────────────────────────────┐  │
 │  │              Tool Registry (10+ Tools)                   │  │
-│  │  • Diagnostics  • Logs       • Search   • Subbuilds     │   │
-│  │  • Trigger      • Parameters • Ripgrep  • Navigation    │   │
+│  │  • Diagnostics  • Logs       • Search   • Subbuilds      │  │
+│  │  • Trigger      • Parameters • Ripgrep  • Navigation     │  │
 │  └──────────────────────────────────────────────────────────┘  │
 │  ┌──────────────┐  ┌──────────────┐  ┌─────────────────────┐   │
 │  │ Cache Mgr    │  │ Vector Mgr   │  │ Cleanup Scheduler   │   │
 │  └──────────────┘  └──────────────┘  └─────────────────────┘   │
-└───────┬──────────────────────────────────────┬─────────────────┘
-        │                                       │
-        ▼                                       ▼
-┌──────────────────────┐            ┌────────────────────────┐
-│   Jenkins Instances  │            │   Qdrant Vector DB     │
-│  • Production        │            │  • Semantic Search     │
-│  • Staging           │            │  • Log Embeddings      │
-│  • Development       │            │  • 6333 (HTTP/REST)    │
-│  • API: REST/JSON    │            │  • 6334 (gRPC)         │
-└──────────────────────┘            └────────────────────────┘
+└───────────┬──────────────────────────────────────┬─────────────┘
+            │                                      │
+            ▼                                      ▼
+┌──────────────────────┐              ┌────────────────────────┐
+│   Jenkins Instances  │              │   Qdrant Vector DB     │
+│  • Production        │              │  • Semantic Search     │
+│  • Staging           │              │  • Log Embeddings      │
+│  • Development       │              │  • 6333 (HTTP/REST)    │
+│  • API: REST/JSON    │              │  • 6334 (gRPC)         │
+└──────────────────────┘              └────────────────────────┘
 ```
 
 **Component Breakdown:**
